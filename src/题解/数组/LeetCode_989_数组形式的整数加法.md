@@ -10,7 +10,6 @@ https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 
 给定非负整数 X 的数组形式 A，返回整数 X+K 的数组形式。
 
- 
 
 示例 1：
 
@@ -40,8 +39,6 @@ https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 解释：9999999999 + 1 = 10000000000
 
 
- 
-
 提示：
 
 1 <= A.length <= 10000
@@ -53,6 +50,13 @@ https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 ## 思路
 
 硬刚出来的，明天看看别人的解答
+
+第一次刷题没思路，发现其实很多思路重点都是在“数据结构”上，
+
+像我这样用了很多现成的东西就有问题，
+一般题解都是遵循用“最简单的圆来造轮子”来进行的。
+
+
 
 ## 关键点
 
@@ -132,7 +136,7 @@ private List<Integer> calculate(int[] longer, int[] shorter) {
 
 令 n 为数组长度。
 
-- 时间复杂度：$O(n)$
-- 空间复杂度：$O(n)$
+- 时间复杂度：
+- 空间复杂度：
 
 
