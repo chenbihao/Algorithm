@@ -1,17 +1,15 @@
-package array;
+package array_stack_queue;
 
 import junitSupport.IntArrayConverter;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * @author: chenbihao
- * @create: 2021/9/10
+ * @create: 2021/9/11
  * @Description:
  * @History:
  */
@@ -23,7 +21,7 @@ public class LeetCode_821_ShortestDistanceToACharacterTest {
             "'loveleetcode', 'e', '3,2,1,0,1,0,0,1,2,2,1,0'"
     })
     public void test(String s, char c, @ConvertWith(IntArrayConverter.class) int[] result) {
-        assertArrayEquals(result, new LeetCode_821_ShortestDistanceToACharacter().shortestToChar(s, c));
+        assertArrayEquals(result, new LeetCode_821_Solution().shortestToChar(s, c));
     }
 
 

@@ -1,17 +1,12 @@
-package array;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+package array_stack_queue;
 
 /**
  * @author: chenbihao
- * @create: 2021/9/10
+ * @create: 2021/9/11
  * @Description:
  * @History:
  */
-public class LeetCode_821_ShortestDistanceToACharacter {
+public class LeetCode_821_Solution {
 
     /**
      * 给你一个字符串 s 和一个字符 c ，且 c 是 s 中出现过的字符。

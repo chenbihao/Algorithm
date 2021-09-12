@@ -1,4 +1,4 @@
-package array;
+package array_stack_queue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * @Description:
  * @History:
  */
-public class LeetCode_989_AddToArrayFormOfInteger {
+public class LeetCode_989_Solution {
 
     /**
      * 对于非负整数 X 而言，X 的数组形式是每位数字按从左到右的顺序形成的数组。例如，如果 X = 1231，那么其数组形式为 [1,2,3,1]。

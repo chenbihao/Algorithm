@@ -1,4 +1,4 @@
-package array;
+package array_stack_queue;
 
 import junitSupport.IntArrayConverter;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -27,7 +27,7 @@ public class LeetCode_989_AddToArrayFromOfIntegerTest {
     })
     public void test(@ConvertWith(IntArrayConverter.class) int[] num, int k
             , @ConvertWith(IntArrayConverter.class) int[] result) {
-        assertArrayEquals(result,getIntArray(new LeetCode_989_AddToArrayFormOfInteger().addToArrayForm(num,k)));
+        assertArrayEquals(result,getIntArray(new LeetCode_989_Solution().addToArrayForm(num,k)));
     }
 
 
