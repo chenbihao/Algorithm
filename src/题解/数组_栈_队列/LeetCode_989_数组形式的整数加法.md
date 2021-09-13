@@ -1,7 +1,7 @@
 
 ## LeetCode_989_数组形式的整数加法
 
-https://leetcode-cn.com/problems/add-to-array_stack_queue-form-of-integer/
+https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 
 ## 题目描述
 
@@ -49,14 +49,15 @@ https://leetcode-cn.com/problems/add-to-array_stack_queue-form-of-integer/
 
 ## 思路
 
-硬刚出来的，明天看看别人的解答
-
 第一次刷题没思路，发现其实很多思路重点都是在“数据结构”上，
-
-像我这样用了很多现成的东西就有问题，
 一般题解都是遵循用“最简单的圆来造轮子”来进行的。
 
+后续更新：
 
+这题跟 2.两数相加 一样，
+主要是：
+
+`当前位 = (A 的当前位 + B 的当前位 + 进位carry) % 10`
 
 ## 关键点
 

@@ -39,13 +39,6 @@ public class LeetCode_989_Solution {
 
     }
 
-    /**
-     * 计算
-     *
-     * @param longer
-     * @param shorter
-     * @return
-     */
     private List<Integer> calculate(int[] longer, int[] shorter) {
         int carry = 0;
         for (int i = 0; i < longer.length; i++) {
@@ -86,5 +79,8 @@ public class LeetCode_989_Solution {
         return ints;
     }
 
-
 }
+
+
+
+

@@ -1,5 +1,6 @@
 
 ## LeetCode_1381_设计一个支持增量操作的栈
+
 https://leetcode-cn.com/problems/design-a-stack-with-increment-operation/
 
 ## 题目描述
