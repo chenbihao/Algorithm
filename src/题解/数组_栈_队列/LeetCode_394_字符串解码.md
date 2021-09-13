@@ -49,7 +49,7 @@ Java Code:
 
 ``` java
 
-public String decodeString(String s) {
+    public String decodeString(String s) {
 
         Stack<Integer> countStack = new Stack();
         Stack<String> StrStack = new Stack();
@@ -58,7 +58,6 @@ public String decodeString(String s) {
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-
             if (c >= '0' && c <= '9') {
                 // 遇到数字就记录   也可以用这个来判断是否数字：  if (Character.isDigit(c)) {
                 count += Integer.parseInt(String.valueOf(c));
@@ -66,17 +65,15 @@ public String decodeString(String s) {
                 // 遇到左括号就入栈
                 countStack.push(Integer.parseInt(count));
                 StrStack.push(str);
-                count = "";
-                str = "";
+                count = str = "";
             } else if (c == ']') {
                 // 遇到右括号就出栈
-                String s1 = StrStack.pop();
                 Integer c1 = countStack.pop();
                 String temp = "";
                 for (int j = 0; j < c1; j++) {
                     temp += str;
                 }
-                str = s1 + temp;
+                str = StrStack.pop() + temp;
             } else {
                 // 记录字母
                 str += c;
