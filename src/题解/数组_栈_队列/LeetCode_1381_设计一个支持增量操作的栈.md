@@ -154,7 +154,7 @@ class LeetCode_1381_CustomStack_v2 {
 **复杂度分析**
 
 v1版：
-- 时间复杂度：  
+- 时间复杂度： O(k)
   - push 操作和 pop 操作： O(1) 
   - inc 操作： O(k)
 - 空间复杂度： O(maxSize)
