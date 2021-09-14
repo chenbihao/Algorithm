@@ -33,7 +33,7 @@ public class LeetCode_232_MyQueue {
     }
 
     public boolean empty() {
-        return stackIn.empty()&& stackOut.empty();
+        return stackIn.empty() && stackOut.empty();
     }
 
     /**

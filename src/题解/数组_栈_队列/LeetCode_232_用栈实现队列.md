@@ -78,55 +78,48 @@ myQueue.empty(); // return false
 Java Code:
 
 ``` java
-
 public class LeetCode_232_MyQueue {
 
-    Stack<Integer> stack, stackReverse;
+    Stack<Integer> stackIn, stackOut;
 
     public LeetCode_232_MyQueue() {
-        stack = new Stack();
-        stackReverse = new Stack();
+        stackIn = new Stack();
+        stackOut = new Stack();
     }
 
     public void push(int x) {
-        // 判断reverse是否为空 空的话直接入stack，否则先反转回去
-        if (!stackReverse.isEmpty()) {
-            while (!stackReverse.isEmpty()) {
-                stack.push(stackReverse.pop());
-            }
-        }
         // 把 x 入栈
-        stack.push(x);
+        stackIn.push(x);
     }
 
     public int pop() {
         stackReverse();
-        return stackReverse.pop();
+        return stackOut.pop();
     }
 
     public int peek() {
         stackReverse();
-        return stackReverse.peek();
+        return stackOut.peek();
     }
 
     public boolean empty() {
-        return stack.empty() && stackReverse.empty();
+        return stackIn.empty() && stackOut.empty();
     }
 
     /**
      * 要取的话，判断reverse是否为空，空的话先反转
      */
     private void stackReverse() {
-        if (stackReverse.isEmpty()) {
-            while (!stack.isEmpty()) {
-                stackReverse.push(stack.pop());
+        if (stackOut.isEmpty()) {
+            while (!stackIn.isEmpty()) {
+                stackOut.push(stackIn.pop());
             }
         }
     }
 
 }
-
 ```
+
 
 
 **复杂度分析**
