@@ -3,7 +3,7 @@
 
 https://leetcode-cn.com/problems/design-a-stack-with-increment-operation/
 
-## 题目描述
+## 题目描述 ( 中等 )
 
 ``` java
 请你设计一个支持下述操作的栈。

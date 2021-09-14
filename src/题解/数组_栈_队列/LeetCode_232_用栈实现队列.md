@@ -3,7 +3,7 @@
 
 https://leetcode-cn.com/problems/implement-queue-using-stacks/
 
-## 题目描述
+## 题目描述 ( 简单 )
 
 ```
 请你仅使用两个栈实现先入先出队列。队列应当支持一般队列支持的所有操作（push、pop、peek、empty）：

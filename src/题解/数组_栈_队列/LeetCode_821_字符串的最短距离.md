@@ -3,7 +3,7 @@
 
 https://leetcode-cn.com/problems/shortest-distance-to-a-character/
 
-## 题目描述
+## 题目描述 ( 简单 )
 
 ``` java
 给你一个字符串 s 和一个字符 c ，且 c 是 s 中出现过的字符。
