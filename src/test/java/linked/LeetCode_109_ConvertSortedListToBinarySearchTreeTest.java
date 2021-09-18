@@ -1,4 +1,4 @@
-package tree;
+package linked;
 
 import org.junit.jupiter.api.Test;
 
@@ -24,8 +24,10 @@ public class LeetCode_109_ConvertSortedListToBinarySearchTreeTest {
          *
          * [0, -3, 9, -10, null, 5]
          */
+        ListNode head = new ListNode(-10, new ListNode(-3, new ListNode(0, new ListNode(5, new ListNode(9)))));
 
 
+        TreeNode result = new LeetCode_109_Solution().sortedListToBST(head);
 
 
 

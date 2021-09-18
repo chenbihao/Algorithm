@@ -26,26 +26,47 @@ https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/
 
 ## 思路
 
-
+递归：
+- 快慢指针
+缓存：
+- 
 
 ## 关键点
 
-二叉搜索树
+递归
 
 ## 代码
 
 Java Code:
 
 ``` java
+public TreeNode sortedListToBST(ListNode head) {
+    return dfs(head, null);
+}
 
-
-
+private TreeNode dfs(ListNode head, ListNode tail) {
+    if (head == tail) {
+        return null;
+    }
+    // 寻找中点
+    ListNode fast = head, slow = head;
+    while (fast != tail && fast.next != tail) {
+        fast = fast.next.next;
+        slow = slow.next;
+    }
+    // 慢的就是中点
+    TreeNode treeNode = new TreeNode(slow.val);
+    // 分别拿左右边的值递归下去
+    treeNode.left = dfs(head, slow);
+    treeNode.right = dfs(slow.next, tail);
+    return treeNode;
+}
 ```
 
 
 **复杂度分析**
 
-- 时间复杂度：O()
-- 空间复杂度：O()
+- 时间复杂度：O(nlogn)
+- 空间复杂度：O(logn)
 
 
