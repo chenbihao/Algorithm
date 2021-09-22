@@ -32,6 +32,11 @@ public class LeetCode_104_MaximumDepthOfBinaryTreeTest {
         TreeNode root = new TreeNode(3,new TreeNode(9),new TreeNode(20,new TreeNode(15),new TreeNode(17)));
         assertEquals(3,new LeetCode_104_Solution().maxDepth(root));
 
+
+        TreeNode root2 = new TreeNode(1,new TreeNode(2,new TreeNode(4),new TreeNode(5)),new TreeNode(3));
+        assertEquals(3,new LeetCode_104_Solution().maxDepth(root2));
+
+
     }
 
 

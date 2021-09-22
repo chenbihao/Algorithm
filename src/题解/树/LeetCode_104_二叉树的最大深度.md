@@ -25,26 +25,49 @@ https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
 
 ## 思路
 
-
+- 递归 DFS （深度优先，递归返回最深层数）
+- 迭代 BFS （广度优先，迭代每一层并计数）
 
 ## 关键点
 
-
+树的遍历
 
 ## 代码
 
 Java Code:
 
-``` java
-
-
-
+```java
+public class LeetCode_104_Solution {
+    public int maxDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int ans = 0;
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        while (queue.size() > 0) {
+            int size = queue.size();
+            while (size > 0) {
+                TreeNode node = queue.poll();
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+                size--;
+            }
+            ans++;
+        }
+        return ans;
+    }
+}
 ```
 
 
 **复杂度分析**
 
-- 时间复杂度：O()
-- 空间复杂度：O()
+- 时间复杂度：O(n)
+- 空间复杂度：O(n)
 
 
