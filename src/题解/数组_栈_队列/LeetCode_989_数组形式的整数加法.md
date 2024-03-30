@@ -49,7 +49,7 @@ https://leetcode-cn.com/problems/add-to-array-form-of-integer/
 
 ## 思路
 
-第一次刷题没思路，发现其实很多思路重点都是在“数据结构”上，
+很多思路重点都是在“数据结构”上，
 一般题解都是遵循用“最简单的圆来造轮子”来进行的。
 
 后续更新：

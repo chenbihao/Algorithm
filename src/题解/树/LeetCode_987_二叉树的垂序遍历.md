@@ -49,10 +49,7 @@ https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/
 
 ## 思路
 
-写错了 误解了题意，忘记考虑层序也要排序
-层序相同的再考虑值序!
 
-日后再来挑战
 
 ## 关键点
 
